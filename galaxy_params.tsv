@@ -1,0 +1,445 @@
+First search peptide tolerance	firstSearchTol	20	This is the mass tolerance that is applied to the peptide masses during the first round Andromeda search which is used for the mass and time dependent recalibration of the peptide masses. For 'normal' orbitrap or velos data without any severe calibration problems 20 ppm are sufficient. In case of larger mass errors this value should be increased appropriately.
+Main search peptide tolerance	mainSearchTol	4,5	The peptide mass tolerance used during the main search. This refers to mass deviations after the time and mass dependent peptide mass calibration has been performed. 6 ppm are usually sufficient.
+Peptide tolerance unit	searchTolInPpm	"~ppm
+Da"	-
+Individual peptide mass tolerance	doMassFiltering	TRUE	If checked peptides will be filtered according to individual peptide mass tolerances. These individual tolerances are calculated as described in the MaxQuant paper Nat Biotechnol. 2008,26:1367-72.
+Isotope match tolerance	isotopeMatchTol	2	-
+Isotope match tolerance unit	isotopeMatchTolInPpm	"~ppm
+Da"	-
+Centroid match tolerance	centroidMatchTol	8	-
+Centroid match tolerance unit	centroidMatchTolInPpm	"~ppm
+Da"	-
+Centroid half width	centroidHalfWidth	35	-
+Centroid half width unit	centroidHalfWidthInPpm	"~ppm
+Da"	-
+Time valley factor	valleyFactor	1,4	-
+Isotope valley factor	isotopeValleyFactor	1,2	-
+Isotope time correlation	isotopeTimeCorrelation	0,6	-
+Theoretical isotope correlation	theorIsotopeCorrelation	0,6	-
+Recalibration unit	recalibrationInPpm	"~ppm
+Da"	-
+Use MS1 centroids	useMs1Centroids	FALSE	
+Use MS2 centroids	useMs2Centroids	FALSE	
+Intensity dependent calibration	intensityDependentCalibration	FALSE	
+Min. peak length	minPeakLen	2	Minimum number of MS1 scans for defining a 3D peak.
+Min. DIA peak length	diaMinPeakLen	1	Minimum number of MS1 or MS2 scans for defining a 3D peak in DIA data.
+Max. charge	maxCharge	7	The maximum peptide charge of MS features. The deisotoping algorithm will try to detect MS feature isotope patterns up to this charge value. the minimal charge of MS features is 1.
+Min score for recalibration	minScoreForCalibration	70	-
+Cut peaks	cutPeaks	TRUE	If true then 3D peaks will be cut into pieces if they have significant local intensity minima as a function of retention time.
+Gap scans	gapScans	1	-
+Advanced peak splitting	advancedPeakSplitting	FALSE	-
+Intensity threshold MS1	intensityThresholdMs1	0	-
+Intensity threshold MS2	intensityThresholdMs2	0	-
+Check mass deficit	checkMassDeficit	TRUE	-
+Intensity determination	intensityDetermination	"~Value at maximum
+Total sum
+Sum FWHM
+Sum FWHM (smooth)"	-
+Centroid Position	centroidPosition	"~Gaussian
+WeightedMean"	-
+DIA initial precursor mass tolerance [ppm]	diaInitialPrecMassTolPpm	20	-
+DIA initial precursor mass tolerance [ppm]	diaInitialFragMassTolPpm	20	-
+DIA corr. threshold for feature clustering	diaCorrThresholdFeatureClustering	0,85	-
+DIA prec. mass tol. for feat. clustering [ppm]	diaPrecTolPpmFeatureClustering	2	-
+DIA frag. mass tol. for feat. clustering [ppm]	diaFragTolPpmFeatureClustering	2	-
+DIA score N	diaScoreN	7	-
+DIA min. score	diaMinScore	1,99	-
+DIA quant method	diaQuantMethod	"Precursor
+Top fragments
+Top fragments by annotation
+Top fragments by annotation, imputation
+Top fragments by annotation, LFQ split
+Top fragments by annotation, LFQ split, imputation
+Mixed
+~Mixed, LFQ split
+Mixed, LFQ split, imputation"	-
+DIA feature quant method	diaFeatureQuantMethod	"Scan
+Apex
+~Sum"	-
+DIA top N fragments for quant	diaTopNForQuant	10	-
+DIA top msms intensity quantile for quant	diaMinMsmsIntensityForQuant	0,85	-
+DIA min. msms intensity for quant	diaTopMsmsIntensityQuantileForQuant	0	-
+DIA precursor filter type	diaPrecursorFilterType	"~None
+Or
+And"	-
+DIA min. fragment overlap score	diaMinFragmentOverlapScore	1	-
+DIA min. precursor score	diaMinPrecursorScore	0,5	-
+DIA min. profile correlation	diaMinProfileCorrelation	0	-
+DIA global ML	diaGlobalMl	TRUE	-
+DIA adaptive mass accuracy	diaAdaptiveMassAccuracy	FALSE	-
+DIA mass window factor	diaMassWindowFactor	3,3	-
+DIA background subtraction	diaBackgroundSubtraction	FALSE	-
+DIA background subtraction quantile	diaBackgroundSubtractionQuantile	0,5	-
+DIA background subtraction factor	diaBackgroundSubtractionFactor	4	-
+DIA transfer q-value	diaTransferQvalue	0,3	-
+DIA LFQ weighted median	diaLfqWeightedMedian	FALSE	-
+DIA XGBoost Base Score	diaXgBoostBaseScore	0,4	-
+DIA XGBoost Sub Sample	diaXgBoostSubSample	0,9	-
+DIA XGBoost learning objective	diaXgBoostLearningObjective	"Binary logistic
+~Binary logistic raw
+SoftMax
+SoftProb"	-
+DIA XGBoost Min child weight	diaXgBoostMinChildWeight	9	-
+DIA XGBoost Maximum Tree Depth	diaXgBoostMaximumTreeDepth	12	-
+DIA XGBoost Estimators	diaXgBoostEstimators	580	-
+DIA XGBoost Gamma	diaXgBoostGamma	0,9	-
+DIA XGBoost Max Delta Step	diaXgBoostMaxDeltaStep	3	-
+DIA no ML	diaNoMl	FALSE	-
+DIA only isos for recalibration	diaOnlyIsosForRecal	TRUE	-
+DIA min. peaks for recalibration	diaMinPeaksForRecal	5	-
+First search peptide tolerance	firstSearchTol	20	This is the mass tolerance that is applied to the peptide masses during the first round Andromeda search which is used for the mass and time dependent recalibration of the peptide masses. For 'normal' orbitrap or velos data without any severe calibration problems 20 ppm are sufficient. In case of larger mass errors this value should be increased appropriately.
+Main search peptide tolerance	mainSearchTol	10	The peptide mass tolerance used during the main search. This refers to mass deviations after the time and mass dependent peptide mass calibration has been performed. 6 ppm are usually sufficient.
+Peptide tolerance unit	searchTolInPpm	"~ppm
+Da"	-
+Individual peptide mass tolerance	doMassFiltering	TRUE	If checked peptides will be filtered according to individual peptide mass tolerances. These individual tolerances are calculated as described in the MaxQuant paper Nat Biotechnol. 2008,26:1367-72.
+Isotope match tolerance	isotopeMatchTol	5	-
+Isotope match tolerance unit	isotopeMatchTolInPpm	"ppm
+~Da"	-
+Centroid match tolerance	centroidMatchTol	10	-
+Centroid match tolerance unit	centroidMatchTolInPpm	"~ppm
+Da"	-
+Centroid half width	centroidHalfWidth	35	-
+Centroid half width unit	centroidHalfWidthInPpm	"~ppm
+Da"	-
+Time valley factor	valleyFactor	1,2	-
+Isotope valley factor	isotopeValleyFactor	1,2	-
+Isotope time correlation	isotopeTimeCorrelation	0,6	-
+Theoretical isotope correlation	theorIsotopeCorrelation	0,6	-
+Recalibration unit	recalibrationInPpm	"~ppm
+Da"	-
+Use MS1 centroids	useMs1Centroids	TRUE	
+Use MS2 centroids	useMs2Centroids	TRUE	
+Intensity dependent calibration	intensityDependentCalibration	TRUE	
+Min. peak length	minPeakLen	3	Minimum number of MS1 scans for defining a 3D peak.
+Min. DIA peak length	diaMinPeakLen	2	Minimum number of MS1 or MS2 scans for defining a 3D peak in DIA data.
+Max. charge	maxCharge	4	The maximum peptide charge of MS features. The deisotoping algorithm will try to detect MS feature isotope patterns up to this charge value. the minimal charge of MS features is 1.
+Min score for recalibration	minScoreForCalibration	40	-
+Cut peaks	cutPeaks	TRUE	If true then 3D peaks will be cut into pieces if they have significant local intensity minima as a function of retention time.
+Gap scans	gapScans	1	-
+Advanced peak splitting	advancedPeakSplitting	TRUE	-
+Intensity threshold MS1	intensityThresholdMs1	30	-
+Intensity threshold MS2	intensityThresholdMs2	30	-
+Check mass deficit	checkMassDeficit	FALSE	-
+Intensity determination	intensityDetermination	"Value at maximum
+Total sum
+Sum FWHM
+~Sum FWHM (smooth)"	-
+Centroid Position	centroidPosition	"~Gaussian
+WeightedMean"	-
+DIA initial precursor mass tolerance [ppm]	diaInitialPrecMassTolPpm	20	-
+DIA initial precursor mass tolerance [ppm]	diaInitialFragMassTolPpm	20	-
+DIA corr. threshold for feature clustering	diaCorrThresholdFeatureClustering	0,85	-
+DIA prec. mass tol. for feat. clustering [ppm]	diaPrecTolPpmFeatureClustering	2	-
+DIA frag. mass tol. for feat. clustering [ppm]	diaFragTolPpmFeatureClustering	2	-
+DIA score N	diaScoreN	7	-
+DIA min. score	diaMinScore	1,99	-
+DIA quant method	diaQuantMethod	"Precursor
+Top fragments
+Top fragments by annotation
+Top fragments by annotation, imputation
+Top fragments by annotation, LFQ split
+Top fragments by annotation, LFQ split, imputation
+Mixed
+~Mixed, LFQ split
+Mixed, LFQ split, imputation"	-
+DIA feature quant method	diaFeatureQuantMethod	"Scan
+Apex
+~Sum"	-
+DIA top N fragments for quant	diaTopNForQuant	10	-
+DIA top msms intensity quantile for quant	diaMinMsmsIntensityForQuant	0,85	-
+DIA min. msms intensity for quant	diaTopMsmsIntensityQuantileForQuant	0	-
+DIA precursor filter type	diaPrecursorFilterType	"~None
+Or
+And"	-
+DIA min. fragment overlap score	diaMinFragmentOverlapScore	1	-
+DIA min. precursor score	diaMinPrecursorScore	0,5	-
+DIA min. profile correlation	diaMinProfileCorrelation	0	-
+DIA global ML	diaGlobalMl	TRUE	-
+DIA adaptive mass accuracy	diaAdaptiveMassAccuracy	FALSE	-
+DIA mass window factor	diaMassWindowFactor	3,3	-
+DIA background subtraction	diaBackgroundSubtraction	FALSE	-
+DIA background subtraction quantile	diaBackgroundSubtractionQuantile	0,5	-
+DIA background subtraction factor	diaBackgroundSubtractionFactor	4	-
+DIA transfer q-value	diaTransferQvalue	0,3	-
+DIA LFQ weighted median	diaLfqWeightedMedian	TRUE	-
+DIA XGBoost Base Score	diaXgBoostBaseScore	0,4	-
+DIA XGBoost Sub Sample	diaXgBoostSubSample	0,9	-
+DIA XGBoost learning objective	diaXgBoostLearningObjective	"Binary logistic
+~Binary logistic raw
+SoftMax
+SoftProb"	-
+DIA XGBoost Min child weight	diaXgBoostMinChildWeight	9	-
+DIA XGBoost Maximum Tree Depth	diaXgBoostMaximumTreeDepth	12	-
+DIA XGBoost Estimators	diaXgBoostEstimators	580	-
+DIA XGBoost Gamma	diaXgBoostGamma	0,9	-
+DIA XGBoost Max Delta Step	diaXgBoostMaxDeltaStep	3	-
+DIA no ML	diaNoMl	FALSE	-
+DIA only isos for recalibration	diaOnlyIsosForRecal	TRUE	-
+DIA min. peaks for recalibration	diaMinPeaksForRecal	5	-
+First search peptide tolerance	firstSearchTol	20	This is the mass tolerance that is applied to the peptide masses during the first round Andromeda search which is used for the mass and time dependent recalibration of the peptide masses. For 'normal' orbitrap or velos data without any severe calibration problems 20 ppm are sufficient. In case of larger mass errors this value should be increased appropriately.
+Main search peptide tolerance	mainSearchTol	10	The peptide mass tolerance used during the main search. This refers to mass deviations after the time and mass dependent peptide mass calibration has been performed. 6 ppm are usually sufficient.
+Peptide tolerance unit	searchTolInPpm	"~ppm
+Da"	-
+Individual peptide mass tolerance	doMassFiltering	TRUE	If checked peptides will be filtered according to individual peptide mass tolerances. These individual tolerances are calculated as described in the MaxQuant paper Nat Biotechnol. 2008,26:1367-72.
+Isotope match tolerance	isotopeMatchTol	0,005	-
+Isotope match tolerance unit	isotopeMatchTolInPpm	"ppm
+~Da"	-
+Centroid match tolerance	centroidMatchTol	10	-
+Centroid match tolerance unit	centroidMatchTolInPpm	"~ppm
+Da"	-
+Centroid half width	centroidHalfWidth	35	-
+Centroid half width unit	centroidHalfWidthInPpm	"~ppm
+Da"	-
+Time valley factor	valleyFactor	1,2	-
+Isotope valley factor	isotopeValleyFactor	1,2	-
+Isotope time correlation	isotopeTimeCorrelation	0,6	-
+Theoretical isotope correlation	theorIsotopeCorrelation	0,6	-
+Recalibration unit	recalibrationInPpm	"~ppm
+Da"	-
+Use MS1 centroids	useMs1Centroids	FALSE	
+Use MS2 centroids	useMs2Centroids	FALSE	
+Intensity dependent calibration	intensityDependentCalibration	TRUE	
+Min. peak length	minPeakLen	2	Minimum number of MS1 scans for defining a 3D peak.
+Min. DIA peak length	diaMinPeakLen	2	Minimum number of MS1 or MS2 scans for defining a 3D peak in DIA data.
+Max. charge	maxCharge	4	The maximum peptide charge of MS features. The deisotoping algorithm will try to detect MS feature isotope patterns up to this charge value. the minimal charge of MS features is 1.
+Min score for recalibration	minScoreForCalibration	40	-
+Cut peaks	cutPeaks	TRUE	If true then 3D peaks will be cut into pieces if they have significant local intensity minima as a function of retention time.
+Gap scans	gapScans	1	-
+Advanced peak splitting	advancedPeakSplitting	TRUE	-
+Intensity threshold MS1	intensityThresholdMs1	100	-
+Intensity threshold MS2	intensityThresholdMs2	20	-
+Check mass deficit	checkMassDeficit	FALSE	-
+Intensity determination	intensityDetermination	"Value at maximum
+Total sum
+Sum FWHM
+~Sum FWHM (smooth)"	-
+Centroid Position	centroidPosition	"~Gaussian
+WeightedMean"	-
+DIA initial precursor mass tolerance [ppm]	diaInitialPrecMassTolPpm	20	-
+DIA initial precursor mass tolerance [ppm]	diaInitialFragMassTolPpm	20	-
+DIA corr. threshold for feature clustering	diaCorrThresholdFeatureClustering	0,85	-
+DIA prec. mass tol. for feat. clustering [ppm]	diaPrecTolPpmFeatureClustering	2	-
+DIA frag. mass tol. for feat. clustering [ppm]	diaFragTolPpmFeatureClustering	2	-
+DIA score N	diaScoreN	7	-
+DIA min. score	diaMinScore	1,99	-
+DIA quant method	diaQuantMethod	"Precursor
+Top fragments
+Top fragments by annotation
+Top fragments by annotation, imputation
+Top fragments by annotation, LFQ split
+Top fragments by annotation, LFQ split, imputation
+Mixed
+~Mixed, LFQ split
+Mixed, LFQ split, imputation"	-
+DIA feature quant method	diaFeatureQuantMethod	"Scan
+Apex
+~Sum"	-
+DIA top N fragments for quant	diaTopNForQuant	3	-
+DIA top msms intensity quantile for quant	diaMinMsmsIntensityForQuant	0,85	-
+DIA min. msms intensity for quant	diaTopMsmsIntensityQuantileForQuant	0	-
+DIA precursor filter type	diaPrecursorFilterType	"~None
+Or
+And"	-
+DIA min. fragment overlap score	diaMinFragmentOverlapScore	1	-
+DIA min. precursor score	diaMinPrecursorScore	0,5	-
+DIA min. profile correlation	diaMinProfileCorrelation	0	-
+DIA global ML	diaGlobalMl	TRUE	-
+DIA adaptive mass accuracy	diaAdaptiveMassAccuracy	FALSE	-
+DIA mass window factor	diaMassWindowFactor	3,3	-
+DIA background subtraction	diaBackgroundSubtraction	TRUE	-
+DIA background subtraction quantile	diaBackgroundSubtractionQuantile	0,7	-
+DIA background subtraction factor	diaBackgroundSubtractionFactor	4	-
+DIA transfer q-value	diaTransferQvalue	0,3	-
+DIA LFQ weighted median	diaLfqWeightedMedian	TRUE	-
+DIA XGBoost Base Score	diaXgBoostBaseScore	0,4	-
+DIA XGBoost Sub Sample	diaXgBoostSubSample	0,9	-
+DIA XGBoost learning objective	diaXgBoostLearningObjective	"Binary logistic
+~Binary logistic raw
+SoftMax
+SoftProb"	-
+DIA XGBoost Min child weight	diaXgBoostMinChildWeight	9	-
+DIA XGBoost Maximum Tree Depth	diaXgBoostMaximumTreeDepth	12	-
+DIA XGBoost Estimators	diaXgBoostEstimators	580	-
+DIA XGBoost Gamma	diaXgBoostGamma	0,9	-
+DIA XGBoost Max Delta Step	diaXgBoostMaxDeltaStep	3	-
+DIA no ML	diaNoMl	FALSE	-
+DIA only isos for recalibration	diaOnlyIsosForRecal	TRUE	-
+DIA min. peaks for recalibration	diaMinPeaksForRecal	5	-
+First search peptide tolerance	firstSearchTol	20	This is the mass tolerance that is applied to the peptide masses during the first round Andromeda search which is used for the mass and time dependent recalibration of the peptide masses. For 'normal' orbitrap or velos data without any severe calibration problems 20 ppm are sufficient. In case of larger mass errors this value should be increased appropriately.
+Main search peptide tolerance	mainSearchTol	10	The peptide mass tolerance used during the main search. This refers to mass deviations after the time and mass dependent peptide mass calibration has been performed. 6 ppm are usually sufficient.
+Peptide tolerance unit	searchTolInPpm	"~ppm
+Da"	-
+Individual peptide mass tolerance	doMassFiltering	TRUE	If checked peptides will be filtered according to individual peptide mass tolerances. These individual tolerances are calculated as described in the MaxQuant paper Nat Biotechnol. 2008,26:1367-72.
+Isotope match tolerance	isotopeMatchTol	0,005	-
+Isotope match tolerance unit	isotopeMatchTolInPpm	"ppm
+~Da"	-
+Centroid match tolerance	centroidMatchTol	10	-
+Centroid match tolerance unit	centroidMatchTolInPpm	"~ppm
+Da"	-
+Centroid half width	centroidHalfWidth	35	-
+Centroid half width unit	centroidHalfWidthInPpm	"~ppm
+Da"	-
+Time valley factor	valleyFactor	1,2	-
+Isotope valley factor	isotopeValleyFactor	1,2	-
+Isotope time correlation	isotopeTimeCorrelation	0,6	-
+Theoretical isotope correlation	theorIsotopeCorrelation	0,6	-
+Recalibration unit	recalibrationInPpm	"~ppm
+Da"	-
+Use MS1 centroids	useMs1Centroids	TRUE	
+Use MS2 centroids	useMs2Centroids	TRUE	
+Intensity dependent calibration	intensityDependentCalibration	TRUE	
+Min. peak length	minPeakLen	3	Minimum number of MS1 scans for defining a 3D peak.
+Min. DIA peak length	diaMinPeakLen	2	Minimum number of MS1 or MS2 scans for defining a 3D peak in DIA data.
+Max. charge	maxCharge	4	The maximum peptide charge of MS features. The deisotoping algorithm will try to detect MS feature isotope patterns up to this charge value. the minimal charge of MS features is 1.
+Min score for recalibration	minScoreForCalibration	40	-
+Cut peaks	cutPeaks	TRUE	If true then 3D peaks will be cut into pieces if they have significant local intensity minima as a function of retention time.
+Gap scans	gapScans	1	-
+Advanced peak splitting	advancedPeakSplitting	TRUE	-
+Intensity threshold MS1	intensityThresholdMs1	0	-
+Intensity threshold MS2	intensityThresholdMs2	0	-
+Check mass deficit	checkMassDeficit	FALSE	-
+Intensity determination	intensityDetermination	"Value at maximum
+Total sum
+~Sum FWHM
+Sum FWHM (smooth)"	-
+Centroid Position	centroidPosition	"~Gaussian
+WeightedMean"	-
+DIA initial precursor mass tolerance [ppm]	diaInitialPrecMassTolPpm	20	-
+DIA initial precursor mass tolerance [ppm]	diaInitialFragMassTolPpm	20	-
+DIA corr. threshold for feature clustering	diaCorrThresholdFeatureClustering	0,85	-
+DIA prec. mass tol. for feat. clustering [ppm]	diaPrecTolPpmFeatureClustering	2	-
+DIA frag. mass tol. for feat. clustering [ppm]	diaFragTolPpmFeatureClustering	2	-
+DIA score N	diaScoreN	7	-
+DIA min. score	diaMinScore	1,99	-
+DIA quant method	diaQuantMethod	"Precursor
+Top fragments
+Top fragments by annotation
+Top fragments by annotation, imputation
+Top fragments by annotation, LFQ split
+Top fragments by annotation, LFQ split, imputation
+Mixed
+~Mixed, LFQ split
+Mixed, LFQ split, imputation"	-
+DIA feature quant method	diaFeatureQuantMethod	"Scan
+Apex
+~Sum"	-
+DIA top N fragments for quant	diaTopNForQuant	10	-
+DIA top msms intensity quantile for quant	diaMinMsmsIntensityForQuant	0,85	-
+DIA min. msms intensity for quant	diaTopMsmsIntensityQuantileForQuant	0	-
+DIA precursor filter type	diaPrecursorFilterType	"~None
+Or
+And"	-
+DIA min. fragment overlap score	diaMinFragmentOverlapScore	1	-
+DIA min. precursor score	diaMinPrecursorScore	0,5	-
+DIA min. profile correlation	diaMinProfileCorrelation	0	-
+DIA global ML	diaGlobalMl	TRUE	-
+DIA adaptive mass accuracy	diaAdaptiveMassAccuracy	FALSE	-
+DIA mass window factor	diaMassWindowFactor	3,3	-
+DIA background subtraction	diaBackgroundSubtraction	FALSE	-
+DIA background subtraction quantile	diaBackgroundSubtractionQuantile	0,5	-
+DIA background subtraction factor	diaBackgroundSubtractionFactor	4	-
+DIA transfer q-value	diaTransferQvalue	0,3	-
+DIA LFQ weighted median	diaLfqWeightedMedian	TRUE	-
+DIA XGBoost Base Score	diaXgBoostBaseScore	0,4	-
+DIA XGBoost Sub Sample	diaXgBoostSubSample	0,9	-
+DIA XGBoost learning objective	diaXgBoostLearningObjective	"Binary logistic
+~Binary logistic raw
+SoftMax
+SoftProb"	-
+DIA XGBoost Min child weight	diaXgBoostMinChildWeight	9	-
+DIA XGBoost Maximum Tree Depth	diaXgBoostMaximumTreeDepth	12	-
+DIA XGBoost Estimators	diaXgBoostEstimators	580	-
+DIA XGBoost Gamma	diaXgBoostGamma	0,9	-
+DIA XGBoost Max Delta Step	diaXgBoostMaxDeltaStep	3	-
+DIA no ML	diaNoMl	FALSE	-
+DIA only isos for recalibration	diaOnlyIsosForRecal	TRUE	-
+DIA min. peaks for recalibration	diaMinPeaksForRecal	5	-
+First search peptide tolerance	firstSearchTol	20	This is the mass tolerance that is applied to the peptide masses during the first round Andromeda search which is used for the mass and time dependent recalibration of the peptide masses. For 'normal' orbitrap or velos data without any severe calibration problems 20 ppm are sufficient. In case of larger mass errors this value should be increased appropriately.
+Main search peptide tolerance	mainSearchTol	10	The peptide mass tolerance used during the main search. This refers to mass deviations after the time and mass dependent peptide mass calibration has been performed. 6 ppm are usually sufficient.
+Peptide tolerance unit	searchTolInPpm	"~ppm
+Da"	-
+Individual peptide mass tolerance	doMassFiltering	TRUE	If checked peptides will be filtered according to individual peptide mass tolerances. These individual tolerances are calculated as described in the MaxQuant paper Nat Biotechnol. 2008,26:1367-72.
+Isotope match tolerance	isotopeMatchTol	0,005	-
+Isotope match tolerance unit	isotopeMatchTolInPpm	"ppm
+~Da"	-
+Centroid match tolerance	centroidMatchTol	10	-
+Centroid match tolerance unit	centroidMatchTolInPpm	"~ppm
+Da"	-
+Centroid half width	centroidHalfWidth	35	-
+Centroid half width unit	centroidHalfWidthInPpm	"~ppm
+Da"	-
+Time valley factor	valleyFactor	1,2	-
+Isotope valley factor	isotopeValleyFactor	1,2	-
+Isotope time correlation	isotopeTimeCorrelation	0,6	-
+Theoretical isotope correlation	theorIsotopeCorrelation	0,6	-
+Recalibration unit	recalibrationInPpm	"~ppm
+Da"	-
+Use MS1 centroids	useMs1Centroids	FALSE	
+Use MS2 centroids	useMs2Centroids	FALSE	
+Intensity dependent calibration	intensityDependentCalibration	TRUE	
+Min. peak length	minPeakLen	2	Minimum number of MS1 scans for defining a 3D peak.
+Min. DIA peak length	diaMinPeakLen	2	Minimum number of MS1 or MS2 scans for defining a 3D peak in DIA data.
+Max. charge	maxCharge	4	The maximum peptide charge of MS features. The deisotoping algorithm will try to detect MS feature isotope patterns up to this charge value. the minimal charge of MS features is 1.
+Min score for recalibration	minScoreForCalibration	40	-
+Cut peaks	cutPeaks	TRUE	If true then 3D peaks will be cut into pieces if they have significant local intensity minima as a function of retention time.
+Gap scans	gapScans	1	-
+Advanced peak splitting	advancedPeakSplitting	TRUE	-
+Intensity threshold MS1	intensityThresholdMs1	30	-
+Intensity threshold MS2	intensityThresholdMs2	30	-
+Check mass deficit	checkMassDeficit	FALSE	-
+Intensity determination	intensityDetermination	"Value at maximum
+Total sum
+Sum FWHM
+~Sum FWHM (smooth)"	-
+Centroid Position	centroidPosition	"~Gaussian
+WeightedMean"	-
+DIA initial precursor mass tolerance [ppm]	diaInitialPrecMassTolPpm	20	-
+DIA initial precursor mass tolerance [ppm]	diaInitialFragMassTolPpm	20	-
+DIA corr. threshold for feature clustering	diaCorrThresholdFeatureClustering	0,85	-
+DIA prec. mass tol. for feat. clustering [ppm]	diaPrecTolPpmFeatureClustering	2	-
+DIA frag. mass tol. for feat. clustering [ppm]	diaFragTolPpmFeatureClustering	2	-
+DIA score N	diaScoreN	7	-
+DIA min. score	diaMinScore	1,99	-
+DIA quant method	diaQuantMethod	"Precursor
+Top fragments
+Top fragments by annotation
+Top fragments by annotation, imputation
+Top fragments by annotation, LFQ split
+Top fragments by annotation, LFQ split, imputation
+Mixed
+~Mixed, LFQ split
+Mixed, LFQ split, imputation"	-
+DIA feature quant method	diaFeatureQuantMethod	"Scan
+Apex
+~Sum"	-
+DIA top N fragments for quant	diaTopNForQuant	10	-
+DIA top msms intensity quantile for quant	diaMinMsmsIntensityForQuant	0,85	-
+DIA min. msms intensity for quant	diaTopMsmsIntensityQuantileForQuant	0	-
+DIA precursor filter type	diaPrecursorFilterType	"~None
+Or
+And"	-
+DIA min. fragment overlap score	diaMinFragmentOverlapScore	1	-
+DIA min. precursor score	diaMinPrecursorScore	0,5	-
+DIA min. profile correlation	diaMinProfileCorrelation	0	-
+DIA global ML	diaGlobalMl	TRUE	-
+DIA adaptive mass accuracy	diaAdaptiveMassAccuracy	FALSE	-
+DIA mass window factor	diaMassWindowFactor	3,3	-
+DIA background subtraction	diaBackgroundSubtraction	FALSE	-
+DIA background subtraction quantile	diaBackgroundSubtractionQuantile	0,5	-
+DIA background subtraction factor	diaBackgroundSubtractionFactor	4	-
+DIA transfer q-value	diaTransferQvalue	0,3	-
+DIA LFQ weighted median	diaLfqWeightedMedian	TRUE	-
+DIA XGBoost Base Score	diaXgBoostBaseScore	0,4	-
+DIA XGBoost Sub Sample	diaXgBoostSubSample	0,9	-
+DIA XGBoost learning objective	diaXgBoostLearningObjective	"Binary logistic
+~Binary logistic raw
+SoftMax
+SoftProb"	-
+DIA XGBoost Min child weight	diaXgBoostMinChildWeight	9	-
+DIA XGBoost Maximum Tree Depth	diaXgBoostMaximumTreeDepth	12	-
+DIA XGBoost Estimators	diaXgBoostEstimators	580	-
+DIA XGBoost Gamma	diaXgBoostGamma	0,9	-
+DIA XGBoost Max Delta Step	diaXgBoostMaxDeltaStep	3	-
+DIA no ML	diaNoMl	FALSE	-
+DIA only isos for recalibration	diaOnlyIsosForRecal	TRUE	-
+DIA min. peaks for recalibration	diaMinPeaksForRecal	5	-
